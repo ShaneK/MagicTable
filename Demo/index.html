@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magic Tables Test</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <link href="css/MagicTable/magictable.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+    <script src="js/MagicTable/MagicTable.js" type="text/javascript"></script>
+    <script src="js/jsrender.min.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("table").magictable();
+    });
+</script>
+<center>Note: This will not work properly if you're trying to preview it by just running it locally. Please run on a server to get a real demo.</center>
+<div style="width: 50em; margin: 0px auto; padding-top: 16px;">
+    <table>
+        <thead>
+        <tr>
+            <th>Number</th>
+            <th>Some City</th>
+            <th>Some Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Argenteuil</td>
+            <td>China</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Cefalà Diana</td>
+            <td>Fiji</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Juiz de Fora</td>
+            <td>Romania</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Belsele</td>
+            <td>Lesotho</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Beervelde</td>
+            <td>Norway</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Enterprise</td>
+            <td>Croatia</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Pereto</td>
+            <td>Maldives</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Winnipeg</td>
+            <td>Uzbekistan</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Annapolis County</td>
+            <td>Rwanda</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Casnate con Bernate</td>
+            <td>Papua New Guinea</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Santu Lussurgiu</td>
+            <td>Sri Lanka</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Drumheller</td>
+            <td>Argentina</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Bonnyville Municipal District</td>
+            <td>Sao Tome and Principe</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Grandrieu</td>
+            <td>Saint Pierre and Miquelon</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Emines</td>
+            <td>Pitcairn</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Ancona</td>
+            <td>Croatia</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Épinal</td>
+            <td>Saint Lucia</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Marseille</td>
+            <td>Switzerland</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Beervelde</td>
+            <td>Timor-leste</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Hannover</td>
+            <td>Svalbard and Jan Mayen</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Warwick</td>
+            <td>Poland</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Villers-aux-Tours</td>
+            <td>Morocco</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Melle</td>
+            <td>Western Sahara</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Rothesay</td>
+            <td>Palau</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Osasco</td>
+            <td>Myanmar</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Kakisa</td>
+            <td>Mali</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Rendsburg</td>
+            <td>Guam</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Bathurst</td>
+            <td>Sudan</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Maasmechelen</td>
+            <td>Virgin Islands, U.S.</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Tywyn</td>
+            <td>Israel</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Falmouth</td>
+            <td>Taiwan, Province of China</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Te Awamutu</td>
+            <td>Micronesia</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Inuvik</td>
+            <td>Cape Verde</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Cape Breton Island</td>
+            <td>Botswana</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Pedace</td>
+            <td>Sierra Leone</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Lunel</td>
+            <td>Morocco</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Haren</td>
+            <td>Antarctica</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Rocky Mountain House</td>
+            <td>Saint Pierre and Miquelon</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Bay Roberts</td>
+            <td>Saint Kitts and Nevis</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Zeveneken</td>
+            <td>Rwanda</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Montigny-le-Tilleul</td>
+            <td>Slovenia</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Neufeld an der Leitha</td>
+            <td>Sierra Leone</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>Dunoon</td>
+            <td>Syrian Arab Republic</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Cavasso Nuovo</td>
+            <td>French Guiana</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Fresno</td>
+            <td>Denmark</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Overland Park</td>
+            <td>Malawi</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Joliet</td>
+            <td>Honduras</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>Essen</td>
+            <td>Romania</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Cairo Montenotte</td>
+            <td>Malta</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Bissegem</td>
+            <td>Namibia</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>Grand-Rosi�re-Hottomont</td>
+            <td>Somalia</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td>Tarcento</td>
+            <td>Swaziland</td>
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>Eindhoven</td>
+            <td>Iceland</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>Altach</td>
+            <td>Syrian Arab Republic</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>Haren</td>
+            <td>Aruba</td>
+        </tr>
+        <tr>
+            <td>56</td>
+            <td>Perinaldo</td>
+            <td>Luxembourg</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>Tailles</td>
+            <td>Togo</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td>Frederick</td>
+            <td>Anguilla</td>
+        </tr>
+        <tr>
+            <td>59</td>
+            <td>Moerkerke</td>
+            <td>Uruguay</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>Weelde</td>
+            <td>Morocco</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>Nashville</td>
+            <td>Bangladesh</td>
+        </tr>
+        <tr>
+            <td>62</td>
+            <td>Malbaie</td>
+            <td>Finland</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td>Stewart</td>
+            <td>Czech Republic</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td>Zaragoza</td>
+            <td>Anguilla</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>Inverurie</td>
+            <td>Timor-leste</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td>Bungay</td>
+            <td>Brazil</td>
+        </tr>
+        <tr>
+            <td>67</td>
+            <td>Pettineo</td>
+            <td>Suriname</td>
+        </tr>
+        <tr>
+            <td>68</td>
+            <td>Anthisnes</td>
+            <td>Martinique</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td>Hudson's Hope</td>
+            <td>Monaco</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td>Fraserburgh</td>
+            <td>Iceland</td>
+        </tr>
+        <tr>
+            <td>71</td>
+            <td>Baranello</td>
+            <td>Anguilla</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td>Mosciano Sant'Angelo</td>
+            <td>Lesotho</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td>Troyes</td>
+            <td>Czech Republic</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td>Westmeerbeek</td>
+            <td>Oman</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td>Velaine-sur-Sambre</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>76</td>
+            <td>Vastogirardi</td>
+            <td>Guinea</td>
+        </tr>
+        <tr>
+            <td>77</td>
+            <td>Harlow</td>
+            <td>Hong Kong</td>
+        </tr>
+        <tr>
+            <td>78</td>
+            <td>Matamata</td>
+            <td>Hong Kong</td>
+        </tr>
+        <tr>
+            <td>79</td>
+            <td>North Vancouver</td>
+            <td>Paraguay</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>Husum</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td>Passau</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>82</td>
+            <td>Bassano in Teverina</td>
+            <td>Faroe Islands</td>
+        </tr>
+        <tr>
+            <td>83</td>
+            <td>Comeglians</td>
+            <td>Lithuania</td>
+        </tr>
+        <tr>
+            <td>84</td>
+            <td>Ketchikan</td>
+            <td>Cambodia</td>
+        </tr>
+        <tr>
+            <td>85</td>
+            <td>Bonn</td>
+            <td>Equatorial Guinea</td>
+        </tr>
+        <tr>
+            <td>86</td>
+            <td>Pont-�-Celles</td>
+            <td>Reunion</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>Mellery</td>
+            <td>Kyrgyzstan</td>
+        </tr>
+        <tr>
+            <td>88</td>
+            <td>Denny</td>
+            <td>Congo</td>
+        </tr>
+        <tr>
+            <td>89</td>
+            <td>Pontedera</td>
+            <td>Rwanda</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>Meeswijk</td>
+            <td>Togo</td>
+        </tr>
+        <tr>
+            <td>91</td>
+            <td>Moxhe</td>
+            <td>Burundi</td>
+        </tr>
+        <tr>
+            <td>92</td>
+            <td>Neu-Isenburg</td>
+            <td>Malawi</td>
+        </tr>
+        <tr>
+            <td>93</td>
+            <td>Sant'Angelo Limosano</td>
+            <td>Tuvalu</td>
+        </tr>
+        <tr>
+            <td>94</td>
+            <td>Terneuzen</td>
+            <td>Central African Republic</td>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td>Quickborn</td>
+            <td>Grenada</td>
+        </tr>
+        <tr>
+            <td>96</td>
+            <td>Swan Hills</td>
+            <td>Congo</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>Martigues</td>
+            <td>Botswana</td>
+        </tr>
+        <tr>
+            <td>98</td>
+            <td>Napier</td>
+            <td>French Southern Territories</td>
+        </tr>
+        <tr>
+            <td>99</td>
+            <td>Saint-Honor�</td>
+            <td>Gibraltar</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>Meeswijk</td>
+            <td>Puerto Rico</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

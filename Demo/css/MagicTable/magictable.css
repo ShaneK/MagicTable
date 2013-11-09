@@ -1,0 +1,59 @@
+.magictable {
+    width: 50em;
+    border-collapse: collapse;
+}
+
+.magictable th {
+    background-color: #0000A3;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #000052;
+}
+
+.magictable td {
+    padding: 5px 0px 5px 5px;
+    border: 1px solid #000052;
+}
+
+.magictable th {
+    padding: 5px 0px 5px 5px;
+}
+
+.magictable-filter-input {
+    margin: -5px;
+    width: 100%;
+}
+
+.magictable tr {
+    background-color: #1F1FFF;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+}
+
+.magictable tr:nth-child(2n+1) {
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    background-color: #7070FF;
+}
+
+.magictable-asc:after {
+    content: "▲";
+    float: right;
+    padding-right: 5px;
+}
+
+.magictable-desc:after {
+    content: "▼";
+    float: right;
+    padding-right: 5px;
+}
+
+.magictable-sortable {
+    cursor: pointer;
+}
